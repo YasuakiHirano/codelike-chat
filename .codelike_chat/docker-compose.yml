@@ -15,6 +15,8 @@ services:
   php:
     build: ./php
     container_name: codelike_chat_php
+    ports:
+      - 6001:6001
     depends_on:
       - db
     volumes:
@@ -44,7 +46,5 @@ services:
       - ./mysql/log/:/var/log/mysql
       - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
     environment:
-      - MYSQL_USER: root
-      - MYSQL_PASSWORD: password
-      - MYSQL_ROOT_PASSWORD: password
-      - TZ: Asia/Tokyo
+      MYSQL_ROOT_PASSWORD: password
+      TZ: Asia/Tokyo
