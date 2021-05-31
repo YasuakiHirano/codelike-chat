@@ -1,2 +1,3 @@
 .codelike_chat/mysql/*
 .codelike_chat/php/*
+.codelike_chat/mysql/log/mysqld.log
