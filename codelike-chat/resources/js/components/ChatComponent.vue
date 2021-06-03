@@ -80,6 +80,8 @@ p.talk-text:last-child {
   border: 3px solid #87ceeb;
   background-color: #fff;
   border-radius: 5px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .talk-area:before {

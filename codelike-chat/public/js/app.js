@@ -21469,7 +21469,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.max-w-name {\n  max-width: 10rem;\n}\np.talk-text {\n  margin: 0 0 8px;\n}\np.talk-text:last-child {\n  margin-bottom: 0px;\n}\n.talk-area {\n  color: #444;\n  position: relative;\n  padding: 1.2em;\n  border: 3px solid #87ceeb;\n  background-color: #fff;\n  border-radius: 5px;\n}\n.talk-area:before {\n  position: absolute;\n  content: '';\n  border: 10px solid transparent;\n  border-right: 10px solid #87ceeb;\n  top: 15px;\n  left: -20px;\n}\n.talk-area:after {\n  position: absolute;\n  content: '';\n  border: 10px solid transparent;\n  border-right: 10px solid #fff;\n  top: 15px;\n  left: -16px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.max-w-name {\n  max-width: 10rem;\n}\np.talk-text {\n  margin: 0 0 8px;\n}\np.talk-text:last-child {\n  margin-bottom: 0px;\n}\n.talk-area {\n  color: #444;\n  position: relative;\n  padding: 1.2em;\n  border: 3px solid #87ceeb;\n  background-color: #fff;\n  border-radius: 5px;\n  overflow-wrap: break-word;\n  word-wrap: break-word;\n}\n.talk-area:before {\n  position: absolute;\n  content: '';\n  border: 10px solid transparent;\n  border-right: 10px solid #87ceeb;\n  top: 15px;\n  left: -20px;\n}\n.talk-area:after {\n  position: absolute;\n  content: '';\n  border: 10px solid transparent;\n  border-right: 10px solid #fff;\n  top: 15px;\n  left: -16px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
