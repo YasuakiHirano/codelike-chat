@@ -21,7 +21,8 @@ Route::get('/', function () {
 
 Route::get('/message', function (Request $request) {
     if (isset($request->message)) {
-        broadcast(new MessageEvent($request->message));
+        logger()->info($request->message. ":". $request->name);
+        broadcast(new MessageEvent($request->message, $request->name));
     }
     return view('chat');
 });

@@ -16,14 +16,17 @@ class MessageEvent implements ShouldBroadcast
 
     public $message;
 
+    public $name;
+
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct($message)
+    public function __construct($message, $name)
     {
         $this->message = $message;
+        $this->name = $name;
     }
 
     /**
@@ -33,7 +36,7 @@ class MessageEvent implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new Channel('message-channel', $this->message);
+        return new Channel('message-channel');
     }
 
     public function broadcastAs()
